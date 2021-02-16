@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jz5tg8pIlci8zfkC5PcVXGi7UNSOFTMAjIoh6TZwYkXv6Nnw2hXMVcOFDMlkgwFLpLLYa75L8LKNlNM7fvqPuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gulde\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gulde\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\gulde\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
