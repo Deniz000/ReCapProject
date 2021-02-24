@@ -26,9 +26,14 @@ namespace Business.Conrete
             _colorDal.Delete(color);
         }
 
-        public List<Color> GetCarsByColorId(int id)
+        public List<Color> GetAll()
         {
             return _colorDal.GetAll();
+        }
+
+        public Color GetCarsByColorId(int id)
+        {
+            return _colorDal.Get(p => p.ColorId == id);
         }
 
         public void Update(Color color)

@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,6 +25,11 @@ namespace Business.Conrete
         public List<Car> GetByDailyPrice(decimal min)
         {
             return _carDal.GetAll(p => p.DailyPrice >= min );
+        }
+
+        public List<CarDetailDto> GetCarDetails()
+        {
+            return _carDal.GetCarDetails();
         }
 
         void ICarService.Add(Car car)

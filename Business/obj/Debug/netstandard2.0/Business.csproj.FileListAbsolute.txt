@@ -12,3 +12,5 @@ C:\Users\gulde\source\repos\ReCapProject\Business\obj\Debug\netstandard2.0\Busin
 C:\Users\gulde\source\repos\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
 C:\Users\gulde\source\repos\ReCapProject\Business\obj\Debug\netstandard2.0\Business.dll
 C:\Users\gulde\source\repos\ReCapProject\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Users\gulde\source\repos\ReCapProject\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Users\gulde\source\repos\ReCapProject\Business\bin\Debug\netstandard2.0\Core.pdb

@@ -8,7 +8,7 @@ using System.Text;
 namespace Business.Conrete
 {
     public class BrandManager : IBrandService
-    {
+    { 
         IBrandDal _brandDal;
 
         public BrandManager(IBrandDal brandDal)
@@ -26,14 +26,19 @@ namespace Business.Conrete
             _brandDal.Delete(brand);
         }
 
+        public List<Brand> GetAll()
+        {
+            return _brandDal.GetAll();
+        }
+
         public List<Brand> GetByBrand(decimal min)
         {
             return _brandDal.GetAll(p => p.BrandName.Length >= min );
         }
 
-        public List<Brand> GetCarsByBrandId(int id)
+        public Brand GetCarsByBrandId(int id)
         {
-            return _brandDal.GetAll();
+            return _brandDal.Get(p => p.BrandId == id);
         }
 
         public void Update(Brand brand)
