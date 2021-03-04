@@ -11,3 +11,4 @@ namespace Entities.Concrete
         public string ColorName { get; set; }
     }
 }
+ 

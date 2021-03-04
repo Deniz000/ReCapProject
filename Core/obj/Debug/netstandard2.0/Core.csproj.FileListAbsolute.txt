@@ -6,4 +6,3 @@ C:\Users\gulde\source\repos\ReCapProject\Core\bin\Debug\netstandard2.0\Core.dll
 C:\Users\gulde\source\repos\ReCapProject\Core\bin\Debug\netstandard2.0\Core.pdb
 C:\Users\gulde\source\repos\ReCapProject\Core\obj\Debug\netstandard2.0\Core.dll
 C:\Users\gulde\source\repos\ReCapProject\Core\obj\Debug\netstandard2.0\Core.pdb
-C:\Users\gulde\source\repos\ReCapProject\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
