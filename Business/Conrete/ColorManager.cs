@@ -35,7 +35,7 @@ namespace Business.Conrete
             return new SuccessDataResult<List<Color>>(_colorDal.GetAll(),Messages.Listed);
         }
 
-        public IDataResult<Color> GetCarsByColorId(int id)
+        public IDataResult<Color> GetById(int id)
         {
             return new SuccessDataResult<Color>(_colorDal.Get(p => p.ColorId == id));
         }

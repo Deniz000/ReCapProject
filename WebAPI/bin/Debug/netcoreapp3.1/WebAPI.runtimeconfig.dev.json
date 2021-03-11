@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gulde\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gulde\\.nuget\\packages"
+    ]
+  }
+}

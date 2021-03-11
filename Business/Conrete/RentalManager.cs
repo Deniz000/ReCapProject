@@ -44,10 +44,23 @@ namespace Business.Conrete
             return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll());
         }
 
+        public IDataResult<Rental> GetById(int id)
+        {
+            return new SuccessDataResult<Rental>(_rentalDal.Get(p => p.RentalId == id)); 
+        }
+        public IDataResult<Rental> GetByCarId(int id)
+        {
+            return new SuccessDataResult<Rental>(_rentalDal.Get(p => p.CarId == id)); 
+        }   
         public IResult Update(Rental rental)
         {
             _rentalDal.Update(rental);
             return new SuccessResult(Messages.InfoUpdated);
+        }
+
+        public IDataResult<Rental> GetCustomerId(int id)
+        {
+            return new SuccessDataResult<Rental>(_rentalDal.Get(p => p.CustomerId == id));
         }
     }
 }

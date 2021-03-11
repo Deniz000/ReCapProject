@@ -36,31 +36,34 @@ namespace Business.Conrete
 
         public IResult Add(Car car)
         {
-            if (car.Description.Length>140)
-            {
-                return new ErrorResult(Messages.InfoInvalid);
-            }
             _carDal.Add(car);
             return new SuccessResult(Messages.InfoAdded);
         }
 
         public IResult Delete(Car car)
         {
-            if (car.CarId.ToString() == null)
-            {
-                return new ErrorResult(Messages.InfoInvalid);
-            }
             _carDal.Delete(car);
             return new SuccessResult(Messages.InfoDeleted);
         }
         public IResult Update(Car car)
         {
-            if (car.CarId.ToString() == null)
-            {
-                return new ErrorResult(Messages.InfoInvalid);
-            }
             _carDal.Update(car);
             return new SuccessResult(Messages.InfoUpdated);
+        }
+
+        public IDataResult<List<Car>> GetCarsByBrandId(int id)
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.BrandId == id));
+        }
+
+        public IDataResult<List<Car>> GetCarsByColorId(int id)
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id));
+        }
+
+        public IDataResult<Car> GetById(int id)
+        {
+            return new SuccessDataResult<Car>(_carDal.Get(p => p.CarId == id));
         }
     }
 }

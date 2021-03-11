@@ -36,14 +36,9 @@ namespace Business.Conrete
             return new SuccessDataResult<List<Brand>>( _brandDal.GetAll(), Messages.Listed);
         }
 
-        public IDataResult<List<Brand>> GetByBrand(decimal min)
+        public IDataResult<Brand> GetById(int id)
         {
-            return new SuccessDataResult<List<Brand>>( _brandDal.GetAll(p => p.BrandName.Length >= min ), Messages.Listed);
-        }
-
-        public IDataResult<Brand> GetCarsByBrandId(int id)
-        {
-            return new SuccessDataResult<Brand>( _brandDal.Get(p => p.BrandId == id));
+            return new SuccessDataResult<Brand>(_brandDal.Get(p => p.BrandId == id));
         }
 
         public IResult Update(Brand brand)
